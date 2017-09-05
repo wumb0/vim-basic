@@ -111,3 +111,5 @@ nnoremap <leader>q :bnext <BAR> bd#<CR>
 nnoremap <leader>t :enew<CR>
 nnoremap <leader>l :ls<CR>
 nmap <leader>n :call NERDTreeToggleOrFocus()<CR>
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+cnoremap wq!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit! <bar> q
